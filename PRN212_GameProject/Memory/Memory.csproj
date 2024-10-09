@@ -1,0 +1,109 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Assets_Memory\Animals\bear_image.jpg" />
+    <None Remove="Assets_Memory\Animals\deer_image.jpg" />
+    <None Remove="Assets_Memory\Animals\eagle_image.jpg" />
+    <None Remove="Assets_Memory\Animals\fish_image.jpg" />
+    <None Remove="Assets_Memory\Animals\fox_image.jpg" />
+    <None Remove="Assets_Memory\Animals\rabbit_image.jpg" />
+    <None Remove="Assets_Memory\black_background.jpg" />
+    <None Remove="Assets_Memory\Cars\blackcar_image.jpg" />
+    <None Remove="Assets_Memory\Cars\bluecar_image.jpg" />
+    <None Remove="Assets_Memory\Cars\greencar_image.jpeg" />
+    <None Remove="Assets_Memory\Cars\orangecar_image.jpg" />
+    <None Remove="Assets_Memory\Cars\redcar_image2.jpg" />
+    <None Remove="Assets_Memory\Cars\Thumbs.db" />
+    <None Remove="Assets_Memory\Cars\whitecar_image.jpg" />
+    <None Remove="Assets_Memory\Cars\yellowcar_image.jpg" />
+    <None Remove="Assets_Memory\Foods\apple_image.jpg" />
+    <None Remove="Assets_Memory\Foods\banana_image.jpg" />
+    <None Remove="Assets_Memory\Foods\grape_image.jpg" />
+    <None Remove="Assets_Memory\Foods\orange_image.jpg" />
+    <None Remove="Assets_Memory\Foods\pepper_image.jpg" />
+    <None Remove="Assets_Memory\Foods\pineapple_image.jpg" />
+    <None Remove="Assets_Memory\greenblock.png" />
+    <None Remove="Assets_Memory\mystery_image.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets_Memory\Animals\bear_image.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets_Memory\Animals\deer_image.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets_Memory\Animals\eagle_image.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets_Memory\Animals\fish_image.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets_Memory\Animals\fox_image.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets_Memory\Animals\rabbit_image.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets_Memory\black_background.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets_Memory\Cars\blackcar_image.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets_Memory\Cars\bluecar_image.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets_Memory\Cars\greencar_image.jpeg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets_Memory\Cars\orangecar_image.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets_Memory\Cars\redcar_image2.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets_Memory\Cars\Thumbs.db">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets_Memory\Cars\whitecar_image.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets_Memory\Cars\yellowcar_image.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets_Memory\Foods\apple_image.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets_Memory\Foods\banana_image.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets_Memory\Foods\grape_image.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets_Memory\Foods\orange_image.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets_Memory\Foods\pepper_image.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets_Memory\Foods\pineapple_image.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets_Memory\greenblock.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets_Memory\mystery_image.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+</Project>

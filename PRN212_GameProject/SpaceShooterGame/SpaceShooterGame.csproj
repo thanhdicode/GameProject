@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="assesst_shootergame\boss.png" />
+    <None Remove="assesst_shootergame\buff_ammo.png" />
+    <None Remove="assesst_shootergame\buff_damage.png" />
+    <None Remove="assesst_shootergame\buff_health.png" />
+    <None Remove="assesst_shootergame\bullet.png" />
+    <None Remove="assesst_shootergame\obstancle.png" />
+    <None Remove="assesst_shootergame\pause_button.png" />
+    <None Remove="assesst_shootergame\ship.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="assesst_shootergame\boss.png" />
+    <Resource Include="assesst_shootergame\buff_ammo.png" />
+    <Resource Include="assesst_shootergame\buff_damage.png" />
+    <Resource Include="assesst_shootergame\buff_health.png" />
+    <Resource Include="assesst_shootergame\bullet.png" />
+    <Resource Include="assesst_shootergame\obstancle.png" />
+    <Resource Include="assesst_shootergame\pause_button.png" />
+    <Resource Include="assesst_shootergame\ship.png" />
+  </ItemGroup>
+
+</Project>

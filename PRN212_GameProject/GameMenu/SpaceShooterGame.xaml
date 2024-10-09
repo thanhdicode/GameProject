@@ -1,0 +1,42 @@
+﻿<Window x:Class="GameMenu.SpaceShooterGame"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GameMenu"
+        mc:Ignorable="d"
+        Title="SpaceShooterGame" Height="600" Width="400"
+        WindowStartupLocation="CenterScreen"
+        MouseMove="Window_MouseMove">
+    <Canvas Name="GameCanvas">
+        <Canvas.Background>
+            <ImageBrush ImageSource="assesst_shootergame/bgst.png" />
+        </Canvas.Background>
+        <!-- Player Ship as an Image -->
+        <Image Name="PlayerShip" Source="assesst_shootergame/ship.png" Width="50" Height="50" Canvas.Left="175" Canvas.Top="499" RenderTransformOrigin="2.8,-0.999"/>
+
+        <!-- Score TextBlock -->
+        <TextBlock Name="ScoreTextBlock" Text="Score: 0" FontSize="24" FontWeight="Bold" Foreground="White"
+           Canvas.Left="10" Canvas.Top="10" />
+
+        <!-- Health TextBlock -->
+        <TextBlock Name="HealthTextBlock" Text="Health: 3" FontSize="24" FontWeight="Bold" Foreground="White"
+           Canvas.Left="10" Canvas.Top="40" />
+        <TextBlock Name="LevelTextBlock" Text="Level: 1" FontSize="24" FontWeight="Bold" Foreground="White"
+           Canvas.Left="10" Canvas.Top="70" />
+        <TextBlock x:Name="DamageTextBlock"
+               FontSize="20"
+               Foreground="White"
+               Canvas.Left="10"
+               Canvas.Top="10"
+               Visibility="Visible" />
+        <Grid x:Name="GameOverOverlay" Visibility="Collapsed">
+            <Rectangle Fill="Black" Opacity="0.7" />
+            <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                <TextBlock Text="Game Over!" FontSize="40" Foreground="Red" HorizontalAlignment="Center"/>
+                <TextBlock x:Name="FinalScoreTextBlock" FontSize="20" Foreground="White" HorizontalAlignment="Center"/>
+                <Button Content="Play Again" Click="PlayAgain_Click" Width="120" Height="40" Margin="10"/>
+            </StackPanel>
+        </Grid>
+    </Canvas>
+</Window>

@@ -1,0 +1,77 @@
+﻿<Window x:Class="GameMenu.Snake"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GameMenu"
+        mc:Ignorable="d"
+           Title="Snake" Height="500" Width="800"
+    MinWidth="300" MinHeight="300"
+    Background="{StaticResource BackgroundColor}"
+    Foreground="{StaticResource TextColor}"
+    FontFamily="{StaticResource MainFont}"
+    WindowStartupLocation="CenterScreen" 
+    Icon="Assets/icon.ico"
+    PreviewKeyDown="Window_PreviewKeyDown"
+    KeyDown="Window_KeyDown"
+    >
+
+    <Viewbox>
+        <Grid>
+            <!-- Định nghĩa các hàng cho Grid -->
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <!-- Hiển thị điểm số của trò chơi -->
+            <TextBlock x:Name="ScoreText"
+           HorizontalAlignment="Center"
+           VerticalAlignment="Center"
+           Text="SCORE 0"
+           FontSize="22"
+           Margin="10"/>
+
+            <!-- Border chứa lưới trò chơi -->
+            <Border x:Name="GridBorder"
+        Grid.Row="1"
+        BorderBrush="{StaticResource GridLineColor}"
+        BorderThickness="1.5"
+        HorizontalAlignment="Center"
+        VerticalAlignment="Center"
+        RenderOptions.EdgeMode="Aliased"
+                Margin="20,0,20,20">
+
+                <!-- UniformGrid để hiển thị các ô của trò chơi -->
+                <UniformGrid x:Name="GameGrid"
+                 Width="400"
+                 Height="400"
+                 Background="{StaticResource GridBackgroundColor}"
+                 SnapsToDevicePixels="True"
+                 RenderOptions.BitmapScalingMode="HighQuality"
+                 >
+
+                </UniformGrid>
+
+            </Border>
+
+            <!-- Border cho lớp phủ khi trò chơi chưa bắt đầu hoặc khi kết thúc -->
+            <Border x:Name="Overlay"
+                Grid.Row="1"
+                Background="{StaticResource OverlayColor}"
+                Width="{Binding Path=ActualWidth, ElementName=GridBorder}"
+                Height="{Binding Path=ActualHeight, ElementName=GridBorder}"
+                Margin="{Binding Path=Margin, ElementName=GridBorder}"
+                RenderOptions.EdgeMode="Aliased">
+                <!-- TextBlock hiển thị thông báo trên lớp phủ -->
+                <TextBlock x:Name="OverlayText" 
+                       Text="PRESS ANY KEY TO START"
+                       FontSize="26"
+                       HorizontalAlignment="Center"
+                       VerticalAlignment="Center"
+                       TextWrapping="Wrap"/>
+
+            </Border>
+        </Grid>
+    </Viewbox>
+</Window>

@@ -1,0 +1,31 @@
+﻿<Window x:Class="SpaceShooterGame.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SpaceShooterGame"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="400"
+        WindowStartupLocation="CenterScreen"
+        KeyDown="Window_KeyDown">
+    <Canvas Name="GameCanvas" Background="Black" MouseMove="GameCanvas_MouseMove">
+        <!-- Player Ship as a Rectangle -->
+        <Image Name="PlayerShip" Source="assesst_shootergame/ship.png" Width="50" Height="50" Canvas.Left="175" Canvas.Top="499" RenderTransformOrigin="2.8,-0.999"/>
+
+        <!-- Score TextBlock -->
+        <TextBlock Name="ScoreTextBlock" Text="Score: 0" FontSize="24" FontWeight="Bold" Foreground="White"
+               Canvas.Left="10" Canvas.Top="10" />
+        
+        <!-- Health TextBlock -->
+        <TextBlock Name="HealthTextBlock" Text="Health: 3" FontSize="24" FontWeight="Bold" Foreground="White"
+               Canvas.Left="10" Canvas.Top="40" />
+        <Button Name="PauseButton" Width="40" Height="40" Canvas.Left="300" Canvas.Top="10" Click="PauseButton_Click" Background="Transparent" BorderBrush="White" BorderThickness="1">
+            <Border CornerRadius="20" Background="Transparent">
+                <TextBlock FontFamily="Segoe MDL2 Assets" Text="&#xE769;" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </Border>
+        </Button>
+        <!-- Exit Button -->
+        <Button Name="ExitButton" Content="Exit" FontSize="20" Width="80" Height="40" Canvas.Left="300" Canvas.Top="60" Click="ExitButton_Click"/>
+
+    </Canvas>
+</Window>

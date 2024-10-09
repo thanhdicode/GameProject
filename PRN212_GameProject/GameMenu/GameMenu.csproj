@@ -1,0 +1,303 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="assesst\exit_label.png" />
+    <None Remove="assesst\play_button.png" />
+    <None Remove="assesst\play_label.png" />
+    <None Remove="assesst\start_game.png" />
+    <None Remove="assesst_shootergame\bgst.png" />
+    <None Remove="assesst_shootergame\boss.png" />
+    <None Remove="assesst_shootergame\boss1.png" />
+    <None Remove="assesst_shootergame\boss2.png" />
+    <None Remove="assesst_shootergame\buff_ammo.png" />
+    <None Remove="assesst_shootergame\buff_damage.png" />
+    <None Remove="assesst_shootergame\buff_health.png" />
+    <None Remove="assesst_shootergame\bullet.png" />
+    <None Remove="assesst_shootergame\obstancle.png" />
+    <None Remove="assesst_shootergame\obstancle1.png" />
+    <None Remove="assesst_shootergame\obstancle2.png" />
+    <None Remove="assesst_shootergame\ship.png" />
+    <None Remove="Assets\BishopB.png" />
+    <None Remove="Assets\BishopW.png" />
+    <None Remove="Assets\Board.png" />
+    <None Remove="Assets\CursorB.cur" />
+    <None Remove="Assets\CursorW.cur" />
+    <None Remove="Assets\icon.ico" />
+    <None Remove="Assets\KingB.png" />
+    <None Remove="Assets\KingW.png" />
+    <None Remove="Assets\KnightB.png" />
+    <None Remove="Assets\KnightW.png" />
+    <None Remove="Assets\PawnB.png" />
+    <None Remove="Assets\PawnW.png" />
+    <None Remove="Assets\QueenB.png" />
+    <None Remove="Assets\QueenW.png" />
+    <None Remove="Assets\RookB.png" />
+    <None Remove="Assets\RookW.png" />
+    <None Remove="Assets_Memory\Animals\bear_image.jpg" />
+    <None Remove="Assets_Memory\Animals\deer_image.jpg" />
+    <None Remove="Assets_Memory\Animals\eagle_image.jpg" />
+    <None Remove="Assets_Memory\Animals\fish_image.jpg" />
+    <None Remove="Assets_Memory\Animals\fox_image.jpg" />
+    <None Remove="Assets_Memory\Animals\rabbit_image.jpg" />
+    <None Remove="Assets_Memory\background_music.mp3" />
+    <None Remove="Assets_Memory\black_background.jpg" />
+    <None Remove="Assets_Memory\Cars\blackcar_image.jpg" />
+    <None Remove="Assets_Memory\Cars\bluecar_image.jpg" />
+    <None Remove="Assets_Memory\Cars\greencar_image.jpeg" />
+    <None Remove="Assets_Memory\Cars\orangecar_image.jpg" />
+    <None Remove="Assets_Memory\Cars\redcar_image2.jpg" />
+    <None Remove="Assets_Memory\Cars\Thumbs.db" />
+    <None Remove="Assets_Memory\Cars\whitecar_image.jpg" />
+    <None Remove="Assets_Memory\Cars\yellowcar_image.jpg" />
+    <None Remove="Assets_Memory\Foods\apple_image.jpg" />
+    <None Remove="Assets_Memory\Foods\banana_image.jpg" />
+    <None Remove="Assets_Memory\Foods\grape_image.jpg" />
+    <None Remove="Assets_Memory\Foods\orange_image.jpg" />
+    <None Remove="Assets_Memory\Foods\pepper_image.jpg" />
+    <None Remove="Assets_Memory\Foods\pineapple_image.jpg" />
+    <None Remove="Assets_Memory\greenblock.png" />
+    <None Remove="Assets_Memory\mystery_image.jpg" />
+    <None Remove="Assets_Memory\SoundEffects\card_flip.mp3" />
+    <None Remove="Assets_Memory\SoundEffects\correct_match.mp3" />
+    <None Remove="Assets_Memory\SoundEffects\incorrect_match.mp3" />
+    <None Remove="Assets_Snake\Body.png" />
+    <None Remove="Assets_Snake\DeadBody.png" />
+    <None Remove="Assets_Snake\DeadHead.png" />
+    <None Remove="Assets_Snake\DroidSansMono.ttf" />
+    <None Remove="Assets_Snake\Empty.png" />
+    <None Remove="Assets_Snake\Food.png" />
+    <None Remove="Assets_Snake\Head.png" />
+    <None Remove="Assets_Snake\icon.ico" />
+    <None Remove="Assets_Tetris\Background.png" />
+    <None Remove="Assets_Tetris\Block-Empty.png" />
+    <None Remove="Assets_Tetris\Block-I.png" />
+    <None Remove="Assets_Tetris\Block-J.png" />
+    <None Remove="Assets_Tetris\Block-L.png" />
+    <None Remove="Assets_Tetris\Block-O.png" />
+    <None Remove="Assets_Tetris\Block-S.png" />
+    <None Remove="Assets_Tetris\Block-T.png" />
+    <None Remove="Assets_Tetris\Block-Z.png" />
+    <None Remove="Assets_Tetris\Icon.ico" />
+    <None Remove="Assets_Tetris\TileBlue.png" />
+    <None Remove="Assets_Tetris\TileCyan.png" />
+    <None Remove="Assets_Tetris\TileEmpty.png" />
+    <None Remove="Assets_Tetris\TileGreen.png" />
+    <None Remove="Assets_Tetris\TileOrange.png" />
+    <None Remove="Assets_Tetris\TilePurple.png" />
+    <None Remove="Assets_Tetris\TileRed.png" />
+    <None Remove="Assets_Tetris\TileYellow.png" />
+    <None Remove="ImagesFlappyBird\clouds.png" />
+    <None Remove="ImagesFlappyBird\clouds2.png" />
+    <None Remove="ImagesFlappyBird\flappyBird.png" />
+    <None Remove="ImagesFlappyBird\pipeBottom.png" />
+    <None Remove="ImagesFlappyBird\pipeTop.png" />
+    <None Remove="Img\bg.jpg" />
+    <None Remove="Logo_Game\chess.jpg" />
+    <None Remove="Logo_Game\flappybird.jpg" />
+    <None Remove="Logo_Game\memory.png" />
+    <None Remove="Logo_Game\snake.png" />
+    <None Remove="Logo_Game\space_shooter.jpg" />
+    <None Remove="Logo_Game\tetris.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ChessLogic\ChessLogic.csproj" />
+    <ProjectReference Include="..\ChessUI\ChessUI.csproj" />
+    <ProjectReference Include="..\Memory\Memory.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="assesst\exit_label.png" />
+    <Resource Include="assesst\play_button.png" />
+    <Resource Include="assesst\play_label.png" />
+    <Resource Include="assesst\start_game.png" />
+    <Resource Include="assesst_shootergame\bgst.png" />
+    <Resource Include="assesst_shootergame\boss.png" />
+    <Resource Include="assesst_shootergame\boss1.png" />
+    <Resource Include="assesst_shootergame\boss2.png" />
+    <Resource Include="assesst_shootergame\buff_ammo.png" />
+    <Resource Include="assesst_shootergame\buff_damage.png" />
+    <Resource Include="assesst_shootergame\buff_health.png" />
+    <Resource Include="assesst_shootergame\bullet.png" />
+    <Resource Include="assesst_shootergame\obstancle.png" />
+    <Resource Include="assesst_shootergame\obstancle1.png" />
+    <Resource Include="assesst_shootergame\obstancle2.png" />
+    <Resource Include="assesst_shootergame\ship.png" />
+    <Resource Include="Assets\BishopB.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\BishopW.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Board.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\CursorB.cur">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\CursorW.cur">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\icon.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\KingB.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\KingW.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\KnightB.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\KnightW.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\PawnB.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\PawnW.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\QueenB.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\QueenW.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\RookB.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\RookW.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets_Memory\Animals\bear_image.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets_Memory\Animals\deer_image.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets_Memory\Animals\eagle_image.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets_Memory\Animals\fish_image.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets_Memory\Animals\fox_image.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets_Memory\Animals\rabbit_image.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets_Memory\background_music.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets_Memory\black_background.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets_Memory\Cars\blackcar_image.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets_Memory\Cars\bluecar_image.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets_Memory\Cars\greencar_image.jpeg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets_Memory\Cars\orangecar_image.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets_Memory\Cars\redcar_image2.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets_Memory\Cars\Thumbs.db">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets_Memory\Cars\whitecar_image.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets_Memory\Cars\yellowcar_image.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets_Memory\Foods\apple_image.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets_Memory\Foods\banana_image.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets_Memory\Foods\grape_image.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets_Memory\Foods\orange_image.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets_Memory\Foods\pepper_image.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets_Memory\Foods\pineapple_image.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets_Memory\greenblock.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets_Memory\mystery_image.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets_Memory\SoundEffects\card_flip.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets_Memory\SoundEffects\correct_match.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets_Memory\SoundEffects\incorrect_match.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets_Snake\Body.png" />
+    <Resource Include="Assets_Snake\DeadBody.png" />
+    <Resource Include="Assets_Snake\DeadHead.png" />
+    <Resource Include="Assets_Snake\DroidSansMono.ttf" />
+    <Resource Include="Assets_Snake\Empty.png" />
+    <Resource Include="Assets_Snake\Food.png" />
+    <Resource Include="Assets_Snake\Head.png" />
+    <Resource Include="Assets_Snake\icon.ico" />
+    <Resource Include="Assets_Tetris\Background.png" />
+    <Resource Include="Assets_Tetris\Block-Empty.png" />
+    <Resource Include="Assets_Tetris\Block-I.png" />
+    <Resource Include="Assets_Tetris\Block-J.png" />
+    <Resource Include="Assets_Tetris\Block-L.png" />
+    <Resource Include="Assets_Tetris\Block-O.png" />
+    <Resource Include="Assets_Tetris\Block-S.png" />
+    <Resource Include="Assets_Tetris\Block-T.png" />
+    <Resource Include="Assets_Tetris\Block-Z.png" />
+    <Resource Include="Assets_Tetris\Icon.ico" />
+    <Resource Include="Assets_Tetris\TileBlue.png" />
+    <Resource Include="Assets_Tetris\TileCyan.png" />
+    <Resource Include="Assets_Tetris\TileEmpty.png" />
+    <Resource Include="Assets_Tetris\TileGreen.png" />
+    <Resource Include="Assets_Tetris\TileOrange.png" />
+    <Resource Include="Assets_Tetris\TilePurple.png" />
+    <Resource Include="Assets_Tetris\TileRed.png" />
+    <Resource Include="Assets_Tetris\TileYellow.png" />
+    <Resource Include="ImagesFlappyBird\clouds.png" />
+    <Resource Include="ImagesFlappyBird\clouds2.png" />
+    <Resource Include="ImagesFlappyBird\flappyBird.png" />
+    <Resource Include="ImagesFlappyBird\pipeBottom.png" />
+    <Resource Include="ImagesFlappyBird\pipeTop.png" />
+    <Resource Include="Img\bg.jpg" />
+    <Resource Include="Logo_Game\chess.jpg" />
+    <Resource Include="Logo_Game\flappybird.jpg" />
+    <Resource Include="Logo_Game\memory.png" />
+    <Resource Include="Logo_Game\snake.png" />
+    <Resource Include="Logo_Game\space_shooter.jpg" />
+    <Resource Include="Logo_Game\tetris.jpg" />
+  </ItemGroup>
+
+</Project>

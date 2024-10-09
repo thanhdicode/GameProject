@@ -1,0 +1,26 @@
+﻿<Application x:Class="GameMenu.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:GameMenu"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <SolidColorBrush x:Key ="BackgroundColor">#211E2B</SolidColorBrush>
+        <SolidColorBrush x:Key ="GridBackgroundColor">#312C40</SolidColorBrush>
+        <SolidColorBrush x:Key ="GridLineColor">#4F4867</SolidColorBrush>
+        <SolidColorBrush x:Key ="TextColor">#EBEBEB</SolidColorBrush>
+        <SolidColorBrush x:Key ="OverlayColor">#7F000000</SolidColorBrush>
+        <FontFamily x:Key="MainFont">Assets_Snake/#Droid Sans Mono</FontFamily>
+        <Style x:Key="SlideBorder" TargetType="Border">
+            <Setter Property="BorderThickness" Value="3"/>
+            <Style.Triggers>
+                <Trigger Property="IsEnabled" Value="false">
+                    <Setter Property="BorderBrush" Value="LimeGreen"/>
+                    <Setter Property="BorderThickness" Value="3"/>
+                </Trigger>
+                <Trigger Property="IsEnabled" Value="true">
+                    <Setter Property="BorderBrush" Value="Black"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </Application.Resources>
+</Application>
